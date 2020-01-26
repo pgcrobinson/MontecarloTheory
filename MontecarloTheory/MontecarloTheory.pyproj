@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>613e9729-ab61-4e49-8c9e-677fb7d1ed7e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SimpleBettor.py</StartupFile>
+    <StartupFile>SimpleBettorMat_Plot_Lib.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,6 +27,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SimpleBettor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SimpleBettorMat_Plot_Lib.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
