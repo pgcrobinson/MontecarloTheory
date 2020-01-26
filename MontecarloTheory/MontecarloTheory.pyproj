@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>613e9729-ab61-4e49-8c9e-677fb7d1ed7e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>MontecarloTheory.py</StartupFile>
+    <StartupFile>SimpleBettor.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>MontecarloTheory</Name>
     <RootNamespace>MontecarloTheory</RootNamespace>
+    <InterpreterId>MSBuild|montecarlo_env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +23,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="MontecarloTheory.py" />
+    <Compile Include="RouletteWheel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SimpleBettor.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="montecarlo_env\">
+      <Id>montecarlo_env</Id>
+      <Version>3.6</Version>
+      <Description>montecarlo_env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
