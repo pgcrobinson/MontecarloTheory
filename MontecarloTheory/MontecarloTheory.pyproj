@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>613e9729-ab61-4e49-8c9e-677fb7d1ed7e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SimpleBettorMat_Plot_Lib.py</StartupFile>
+    <StartupFile>SimpleVsDoubler.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="doubler_bettor.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="MontecarloTheory.py" />
     <Compile Include="RouletteWheel.py">
       <SubType>Code</SubType>
@@ -30,6 +33,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SimpleBettorMat_Plot_Lib.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SimpleVsDoubler.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
